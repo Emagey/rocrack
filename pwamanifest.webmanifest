@@ -1,0 +1,18 @@
+{
+    "lang": "en-us",
+    "name": "RoGold Ultimate",
+    "short_name": "Ultimate",
+    "description": "Use Roblox as a PWA with RoGold Ultimate",
+    "start_url": "https://www.roblox.com",
+    "scope": "https://www.roblox.com",
+    "background_color": "#2f3d58",
+    "theme_color": "#2f3d58",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "https://rogold.live/rogold-logo.png",
+            "sizes": "512x512"
+        }
+    ]
+}
