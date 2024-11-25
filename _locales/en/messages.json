@@ -1,0 +1,18 @@
+{
+    "status": {
+        "message": "Status",
+        "description": "The status that a user can have."
+    },
+    "avhome": {
+        "message": "Avatar Home",
+        "description": "The avatar home of a user."
+    },
+    "profileviews": {
+        "message": "Profile Views",
+        "description": "The number of profile views of a user."
+    },
+    "customizeprofile": {
+        "message": "Customize Profile",
+        "description": "Customize your profile."
+    }
+}

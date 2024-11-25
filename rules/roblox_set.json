@@ -1,0 +1,91 @@
+[
+    {
+        "id": 1,
+        "priority": 2,
+        "action": {
+            "type": "modifyHeaders",
+            "responseHeaders": [
+                {
+                    "header": "content-security-policy",
+                    "operation": "set",
+                    "value": "report-uri https://metrics.roblox.com/v1/csp/report?type=enforce; upgrade-insecure-requests; script-src 'self' 'unsafe-inline' *.evidon.com *.gigya.com *.google-analytics.com *.ns1p.net adservice.google.com cdn.arkoselabs.com arkoselabs.roblox.com connect.facebook.net funcaptcha.com js.rbxcdn.com long.open.weixin.qq.com midas.gtimg.cn radar.cedexis.com res.wx.qq.com roblox-api.arkoselabs.com *.arkoselabs.com roblox-load-generator-configuration.s3.us-east-2.amazonaws.com s.ytimg.com sb.scorecardresearch.com static.rbxcdn.com www.google.com www.gstatic.com www.youtube.com h.online-metrix.net request.eprotect.vantivcnp.com request.eprotect.vantivpostlive.com *.googletagmanager.com *.googleadservices.com googleads.g.doubleclick.net cdn.veriff.me lightstep.com roblox.com js.rbxcdn.com js.stripe.com blob:; img-src https: data:; object-src 'self' blob:; worker-src 'self' blob:;"
+                }
+            ]
+        },
+        "condition": {
+            "regexFilter": "^https://(www|web)\\.roblox\\.com/",
+            "resourceTypes": [
+                "main_frame",
+                "sub_frame"
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "priority": 2,
+        "action": {
+            "type": "modifyHeaders",
+            "requestHeaders": [
+                {
+                    "header": "user-agent",
+                    "operation": "set",
+                    "value": "Roblox/WinInet (GlobalDist; RobloxDirectDownload)"
+                }
+            ]
+        },
+        "condition": {
+            "urlFilter": "gamejoin.roblox.com/v1/"
+        }
+    },
+    {
+        "id": 3,
+        "priority": 2,
+        "action": {
+            "type": "modifyHeaders",
+            "requestHeaders": [
+                {
+                    "header": "user-agent",
+                    "operation": "set",
+                    "value": "Roblox"
+                }
+            ]
+        },
+        "condition": {
+            "urlFilter": "assetgame.roblox.com/Game/ClientPresence.ashx"
+        }
+    },
+    {
+        "id": 4,
+        "priority": 2,
+        "action": {
+            "type": "modifyHeaders",
+            "requestHeaders": [
+                {
+                    "header": "user-agent",
+                    "operation": "set",
+                    "value": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6.1 Mobile/15E148 Safari/604.1"
+                }
+            ]
+        },
+        "condition": {
+            "regexFilter": "games\\.roblox\\.com\/v1\/games\/multiget\\-playability\\-status\\?universeIds\\=\\d+\\&device\\=Phone"
+        }
+    },
+    {
+        "id": 5,
+        "priority": 2,
+        "action": {
+            "type": "modifyHeaders",
+            "requestHeaders": [
+                {
+                    "header": "user-agent",
+                    "operation": "set",
+                    "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Xbox/2003.1001.4.0 Chrome/69.0.3497.128 Electron/4.2.2 Safari/537.36"
+                }
+            ]
+        },
+        "condition": {
+            "regexFilter": "games\\.roblox\\.com\/v1\/games\/multiget\\-playability\\-status\\?universeIds\\=\\d+\\&device\\=Xbox"
+        }
+    }
+]

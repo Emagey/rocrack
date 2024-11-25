@@ -1,0 +1,13 @@
+[
+    {
+        "id": 6,
+        "priority": 1,
+        "action": { 
+            "type": "redirect",
+            "redirect": { "extensionPath": "/pwamanifest.webmanifest"}
+        },
+        "condition": {
+            "urlFilter": "https://notifications.roblox.com/v2/push-notifications/chrome-manifest"
+        }
+    }
+]

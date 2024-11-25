@@ -1,0 +1,46 @@
+:root {
+    /* Light mode */
+    --primary-color: #fff;
+    --background-color: #393B3D;
+    --icon: url("/images/iconrounded.png")
+}
+
+span.holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    margin: 5px;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    overflow-x: hidden;
+    font-family: HCo Gotham SSm, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+}
+
+button {
+    background-color: transparent;
+    border-color: #bdbebe;
+    color: var(--primary-color);
+    border-radius: 8px;
+    border: 1px solid #b8b8b8;
+    cursor: pointer;
+    display: block;
+    height: auto;
+    text-align: center;
+    white-space: nowrap;
+    float: left;
+    padding: 9px;
+    font-size: 16px;
+    line-height: 100%;
+    background-image: none;
+    margin-bottom: 5px;
+    width: 200px;
+    align-self: center;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.7;
+}
